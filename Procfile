@@ -1,1 +1,1 @@
-web: celery flower --port=$PORT --broker=$BROKER_URL --db=$DATABASE_URL --persistent=true --basic_auth=$FLOWER_AUTH
+web: celery --broker=$BROKER_URL flower --port=$PORT --db=$DATABASE_URL --persistent=true --basic_auth=$FLOWER_AUTH
