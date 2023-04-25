@@ -1,1 +1,1 @@
-web: celery --broker=$BROKER_URL flower --address=0.0.0.0 --port=$PORT
+web: celery --broker=$BROKER_URL --broker_max_connections=$CELERY_REDIS_MAX_CONNECTIONS flower --address=0.0.0.0 --port=$PORT
